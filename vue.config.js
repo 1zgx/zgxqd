@@ -10,6 +10,7 @@ module.exports = defineConfig({
         port: 8082,
         https: true,
         proxy: 'https://bellonlinetest.bell.ai',
-    }
+    },
+    publicPath: process.env.NODE_ENV === 'production' ? '1zgx' : '/'
 });
 
